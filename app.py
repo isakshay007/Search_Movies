@@ -75,7 +75,7 @@ To accomplish this task, follow these steps:
 3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations.
 4. COMPARE movies within the filtered results to DETERMINE which ones stand out based on overall critical acclaim and relevance to the user's interests.
 5. SELECT a variety of movies that BEST MATCH all or most of the given preferences to provide a diverse set of recommendations.
-6. PREPARE a personalized list of recommended movies for the user with a brief explanation in one sentence as to why each film was chosen based on their specified criteria. Make sure if there are NO MATCHES for a given set of preferences, DO prepare a courteous message informing them: "Sorry, we couldn't find any movies that match your specific criteria."
+6. PREPARE a personalized list of recommended movies for the user with a brief explanation in one sentence as to why each film was chosen based on their specified criteria. Make sure if there are NO MATCHES for a given set of preferences, DO only display a courteous message informing them: "Sorry, we couldn't find any movies that match your specific criteria". Just Display this message alone and nothing else.
 
 You MUST ensure that your recommendations are as ACCURATE and TAILORED as possible to deliver an EXCEPTIONAL movie recommendation experience.
 """
@@ -84,7 +84,7 @@ You MUST ensure that your recommendations are as ACCURATE and TAILORED as possib
     return response.response
 
 # File path to the movie data
-file_path = "/workspaces/AI-Advocacy-App-Template/list_movies.pdf"
+file_path = "list_movies.pdf"
 
 # Check if file path is not empty and exists
 if file_path and os.path.exists(file_path):
