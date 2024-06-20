@@ -74,7 +74,7 @@ To accomplish this task, follow these steps:
 
 2. IDENTIFY key details {search_query}for each movie such as genre, ratings from recognized platforms (like IMDb), specific tags that categorize the movie's themes or content, director names, and notable actors.
 
-3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations. If the user provides information about any one of these fields—genre, tags, actors/actresses, director, or language {search_query use that information to match and recommend relevant movies from the uploaded file.
+3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations. If the user provides information about any one of these fields — genre, tags, actors/actresses, director, or language {search_query}use that information to match and recommend relevant movies from the uploaded file.
 
 4. COMPARE movies within the filtered results to DETERMINE which ones stand out based on overall critical acclaim and relevance to the user's interests.
 
@@ -91,7 +91,7 @@ You MUST ensure that your recommendations are as ACCURATE and TAILORED as possib
     return response.response
 
 # File path to the movie data
-file_path = "list_movies.pdf"
+file_path = "/workspaces/AI-Advocacy-App-Template/list_movies.pdf"
 
 # Check if file path is not empty and exists
 if file_path and os.path.exists(file_path):
@@ -100,7 +100,7 @@ if file_path and os.path.exists(file_path):
     search_query = st.text_input("Describe your movie preferences:")
 
     # Generate advice button
-    if st.button("Search"):
+    if st.button("Get Recommendations"):
         if not search_query:
             st.warning("Please enter your movie preferences.")
         else:
