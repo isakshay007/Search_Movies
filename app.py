@@ -91,7 +91,7 @@ You MUST ensure that your recommendations are as ACCURATE and TAILORED as possib
     return response.response
 
 # File path to the movie data
-file_path = "/workspaces/AI-Advocacy-App-Template/list_movies.pdf"
+file_path = "list_movies.pdf"
 
 # Check if file path is not empty and exists
 if file_path and os.path.exists(file_path):
