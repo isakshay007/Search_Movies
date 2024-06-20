@@ -74,14 +74,15 @@ To accomplish this task, follow these steps:
 
 2. IDENTIFY key details {search_query}for each movie such as genre, ratings from recognized platforms (like IMDb), specific tags that categorize the movie's themes or content, director names, and notable actors.
 
-3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations. 
+3. FILTER the list by each of the user's preferences in the search query {search_query} to NARROW DOWN potential recommendations. 
 
-4. DISPLAY all these potential recommendations movies that MATCH one , all or most of the given user's preference to provide a diverse set of recommendations.
+4. COMPARE movies within the filtered results to DETERMINE which ones stand out based on overall critical acclaim and relevance to the user's interests.
 
-5. With these recommended movies for the user also prepare a brief explanation in one sentence as to why each film was chosen based on their specified criteria. Make sure if there are NO MATCHES for a given set of preferences, DO only display a courteous message informing them: "Sorry, we couldn't find any movies that match your specific criteria". Just Display this message alone and nothing else.
+5. SELECT a variety of movies that BEST MATCHES either one, all or most of the given preferences to provide a diverse set of recommendations.
+
+6. PREPARE a personalized list of recommended movies for the user with a brief explanation in one sentence as to why each film was chosen based on their specified criteria. Make sure if there are NO MATCHES for a given set of preferences, DO prepare a courteous message informing them: "Sorry, we couldn't find any movies that match your specific criteria.
 
 You MUST ensure that your recommendations are as ACCURATE and TAILORED as possible to deliver an EXCEPTIONAL movie recommendation experience.
-
 
 """
     prompt += f"\nUser's preferences: {search_query}"
