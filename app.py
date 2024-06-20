@@ -96,10 +96,10 @@ file_path = "list_movies.pdf"
 if file_path and os.path.exists(file_path):
      
     # User input 
-    search_query = st.text_input("Describe your movie preferences:")
+    search_query = st.text_input("Describe your movie preferences (Genre/Tags):")
 
     # Generate advice button
-    if st.button("Get Recommendations"):
+    if st.button("Search"):
         if not search_query:
             st.warning("Please enter your movie preferences.")
         else:
