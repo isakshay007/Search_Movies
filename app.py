@@ -74,11 +74,11 @@ To accomplish this task, follow these steps:
 
 2. IDENTIFY key details {search_query}for each movie such as genre, ratings from recognized platforms (like IMDb), specific tags that categorize the movie's themes or content, director names, and notable actors.
 
-3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations. If the user provides information about any one of these fields — genre, tags, actors/actresses, director, or language {search_query} use that information to match and recommend relevant movies having similar information from the uploaded file. For example if the user enters “feel-good” use your expertise to recommend all the movies which come under feel-good since no other criteria is mentioned.
+3. FILTER the list by each of the user's preferences in the search query to NARROW DOWN potential recommendations. 
 
-4. COMPARE movies within the filtered results to DETERMINE which ones stand out based on overall critical acclaim and relevance to the user's interests.
+4. COMPARE movies within the filtered results to DETERMINE which ones stand out based on relevance to the user's interests.
 
-5. SELECT a variety of movies that BEST MATCH all or most of the given preferences to provide a diverse set of recommendations.
+5. SELECT a variety of movies that BEST MATCH one , all or most of the given preferences to provide a diverse set of recommendations.
 
 6. PREPARE a personalized list of recommended movies for the user with a brief explanation in one sentence as to why each film was chosen based on their specified criteria. Make sure if there are NO MATCHES for a given set of preferences, DO only display a courteous message informing them: "Sorry, we couldn't find any movies that match your specific criteria". Just Display this message alone and nothing else.
 
